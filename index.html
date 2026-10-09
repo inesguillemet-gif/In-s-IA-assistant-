@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inès Guillemet — Voice System Assistant</title>
+    <meta name="description" content="Interactive multilingual voice assistant representing Inès Guillemet, Master's student in International Business and Luxury Hospitality." />
+    <meta property="og:title" content="Inès Guillemet — Voice System Assistant" />
+    <meta property="og:description" content="Interactive multilingual voice assistant representing Inès Guillemet, Master's student in International Business and Luxury Hospitality." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Ignore Vite HMR WebSocket errors as HMR is disabled in this environment
+      window.addEventListener('unhandledrejection', function(event) {
+        var reason = event.reason;
+        if (reason && (
+          (typeof reason.message === 'string' && reason.message.includes('WebSocket')) ||
+          (typeof reason === 'string' && reason.includes('WebSocket'))
+        )) {
+          event.preventDefault();
+        }
+      });
+      window.addEventListener('error', function(event) {
+        if (
+          (event.message && typeof event.message === 'string' && event.message.includes('WebSocket')) ||
+          (event.filename && typeof event.filename === 'string' && event.filename.includes('@vite/client'))
+        ) {
+          event.preventDefault();
+        }
+      });
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-[#FAF7F2] text-[#1C1A17] antialiased selection:bg-[#E2D7C3] selection:text-[#1C1A17]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

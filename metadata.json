@@ -1,0 +1,10 @@
+{
+  "name": "Inès Guillemet — Voice System Assistant",
+  "description": "Interactive multilingual voice assistant representing Inès Guillemet, Master's student in International Business and Luxury Hospitality.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
